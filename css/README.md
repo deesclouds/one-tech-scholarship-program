@@ -83,6 +83,49 @@ When styles are applied directly to an HTML element using the style attribute.
 
 Using the style element the style is separated.
 
+**CSS Syntax**
+What is a CSS Ruleset made up of?
+
+Selector: indicates which HTMLs elements the ruleset applies to.
+
+Declaration Block: describes how the ruleset will modify the elements.
+
+Can have multiple declarations inside of it.
+
+Declarations hold a property and value. Declarations end with a semicolon.
+
+**Properties and Values**
+
+property: background-color:
+value: blue;
+
+**Selectors: Type**
+used when wanting to apply a style very widely
+
+What is a CSS Selector?
+It tells the browser which elements the rule will affect.
+
+One example of a type of CSS selector is called a type. 
+
+Selector > Declaration block > Property > Value
+
+**Selectors: Class and ID**
+Class is a group of things with the same characteristics.
+
+```
+<p class="introduction">This is an element that has a class</p>
+```
+Within CSS file class starts with a '.'
+
+ID is when there's only one element to apply it to.
+
+```
+<div id="main-article">
+This has an id</div>
+```
+Within CSS file id starts with a '#'
+
+
 
 
 ### Resources
