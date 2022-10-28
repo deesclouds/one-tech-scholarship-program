@@ -154,6 +154,40 @@ li { font-size: 18pt }
 <!-- 1em = 18pt -->
 ```
 
+**Boxes**
+
+What is div? 
+```
+<div>
+</div>
+```
+Div is short for division, its used to divide up pages into different sections.
+
+It has an invisible box around it. Has a border, margin, height, width etc.
+
+It is a generic container meant to contain text. Can place other elements you'd like within it. Used to organize content as well.
+
+**Box Model**
+- margin (outermost)
+- border
+- padding
+- content (innermost)
+
+
+**Percentages**
+
+by default with doesn't include border or padding.
+
+usually make the border & padding sizing smaller
+
+**Separating Style**
+
+```
+<link rel="stylesheet" href="URL-OF-File">
+```
+
+
+
 
 ### Resources
 - [!Wiki CSS][https://en.wikipedia.org/wiki/CSS] 
