@@ -135,6 +135,26 @@ Styles applied to the body will affect the entire document. Style applied to a l
 
 Style applied at a lower level can override a style at a higher level.
 
+**Units**
+
+- pixels = px = 1/96 of an inch = 96px within 1 inch
+37.8 px = 1cm
+
+- point = pt = 1/72 of an inch = 72pt within 1 inch
+
+- em = relative to a size to something else on the page 
+
+em relative to the font size of the text in the element 
+
+```
+p { font-size: 12pt }
+<!-- 1em = 12pt -->
+
+li { font-size: 18pt }
+<!-- 1em = 18pt -->
+```
+
+
 ### Resources
 - [!Wiki CSS][https://en.wikipedia.org/wiki/CSS] 
 
