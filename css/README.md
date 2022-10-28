@@ -126,7 +126,14 @@ This has an id</div>
 Within CSS file id starts with a '#'
 
 
+**Cascading and Specificity**
 
+What is cascading?
+The way that style properties 'cascade' down the DOM tree starting at the top.
+
+Styles applied to the body will affect the entire document. Style applied to a lower-level element will affect that element and all its descendants.
+
+Style applied at a lower level can override a style at a higher level.
 
 ### Resources
 - [!Wiki CSS][https://en.wikipedia.org/wiki/CSS] 
