@@ -1,0 +1,16 @@
+.blue_box{
+    border: 10px solid blue;
+    width: 150px;
+    height: 100px;
+    padding: 0.5em;
+    margin: 0.5em;
+    float: right;
+}
+.red_box{
+    border: 10px solid red;
+    width: 20px;
+    height: 25px;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    float: right;
+}
