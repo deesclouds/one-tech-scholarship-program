@@ -422,6 +422,32 @@ always list a fallback web-safe font in order to avoid unexpected behaviors.
 
 Add generic font name like serif or sans-serif to the end of the list.
 
+**Meaning Vs Style**
+
+what's the difference between
+```
+ <strong></strong> <em></em> tags?
+```
+the historical reason is that HMTL was created before CSS, but engineers who designed CSS wanted to provide extra customization than HTML did. 
+
+the default way to show emphasis is by styling it as italic. 
+
+we don't have to do it that way, we can use CSS to override the default stylings. 
+
+HTML code isn't only used by browsers that display on the screen. It's also used by search engines, smart speaker apps, and other programs. 
+
+Those programs can't see 'boldface' or 'italics', but they know still need to know which text on a page is more important.
+
+The em and strong elements specify the meaning of their contents. 
+
+CSS style properties specify just the visual appearance.
+
+HTML = meaning
+CSS = look
+
+This is semantics. Using markup to indicate meaning and not just appearance.
+
+em tag indicates what needs to be emphasized. A program that's reading the page aloud to the user will use tone of voice to convey importance. If the page is displayed to the user it might want to emphasize by using color or another property instead of italics.
 
 
 
