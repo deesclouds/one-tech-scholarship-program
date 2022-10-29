@@ -453,9 +453,18 @@ em tag indicates what needs to be emphasized. A program that's reading the page 
 
 nesting boxes is useful when using a box as a container for other boxes.
 
+**Flexbox**
+Flexible box layout
 
+```
+display: flex;
+```
+resizes to fit the screen
 
-
+```
+flex-wrap: wrap
+```
+this wraps the elements down the window
 
 
 [!w3schools color picker tool][https://www.w3schools.com/colors/colors_picker.asp]
