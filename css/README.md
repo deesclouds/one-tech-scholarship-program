@@ -186,9 +186,250 @@ usually make the border & padding sizing smaller
 <link rel="stylesheet" href="URL-OF-File">
 ```
 
+**Color**
+
+256 Colors in the browser.
+Each color is stored in a single byte.
+
+Primary Colors:
+RGB = Red , Green and Blue
+
+
+Color Pickers are helpful.
+Color Pickers are included in Developers Tool section. 
+
+To make the color gray:
+Use equal amounts of red, green, and blue. 
+
+To make black all values have to be zeroed out.(000)
+
+To make white all values have to be maxed out. (255, FF, or 100%)
+
+HSL = Hue Saturation and Lightness
+
+bright red = rgb(100%, 0%, 0%)
+bright blue = rgb(0%, 0%, 100%)
+dark green = rgb(0%, 40%, 0%)
+dark gray = rgb(30%, 30%, 30%)
+black = rgb(0, 0, 0)
+white = rgb(100%, 100%, 100%)
+white = rgb(255, 255, 255)
+
+Amount and intensity = brightness and light. 
+
+Higher values = more intense brighter light.
+
+Lower intensity = darker less intense light.
+
+Hexadecimal = Base 16 (0-9, A-F)
+
+#00cc66 or #99ccff
+ R G B
+
+#000000 = black
+#ffffff = white
+#ff0000 = bright red
+#0000ff = bright blue
+
+rgb(0%, 100%, 100%) = #00fff, aqua, rgb(0, 255, 255)
+
+chartreuse = rgb(127, 255, 0)
+value for green is high which makes it a bright, mostly-green color.
+
+**Fonts**
+
+Choose fonts that work well together.
+```
+font-family: 'Times New Roman', Helvetica, Impact;
+```
+Not every computer or device has the same fonts installed.
+
+Times New Roman is not a font but a typeface.
+
+**Typefaces** have multiple versions that look a little different from one another. 
+
+Times New Roman italic, Times New Roman bold.
+
+**Font** is a specified version of a typeface.
+
+**Font Families**
+Font families are a group of related fonts.
+
+quotes surrounds font families that have spaces in their name. They help ensure the name is read as one thing, rather than three separate things.
+
+**Generic Font Families and Font Stacks**
+
+Generic font-families:
+- serif
+- sans-serif
+- cursive
+- fantasy 
+- monospace: Courier, Courier New, and Source Code Pro
+
+In monospace font family, every character is the same width. 
+
+Useful for writing code because it ensures that everything lines up exactly as expected.
+
+```
+font-family: monospace;
+```
+Generally are used as fallbacks
+In case the browser doesn't have access to the particular font that we want.
+
+**Font Stack**
+We can give multiple options to use. 
+
+The first font in the stack is the most-preferred choice. If that isn't available then the next one, and so on.
+
+```
+font-family: Courier, "Courier New", monospace;
+```
+That way if none of the other font families are available, the browser will still use the right general type.
+
+When you don't care what kind of font family the user sees but you know that you want it to be some sort of font. 
+
+List of font alternatives the browser will pick the first it can.
+
+Constantia font is only available on Windows.
+
+**More Font Properties**
+
+Other properties we can use to style our text.
+
+bold - font-weight: bold;
+italic - font-weight: italic;
+underline - text-decoration: underline;
+
+to change the font size we use font-size property
+```
+font-size: 24px;
+```
+
+to make text bold we use font-weight property
+
+```
+font-weight: bold;
+```
+
+to make text italic we use font-style property
+
+```
+font-size: italic;
+```
+
+to make text underline we use text decoration property 
+```
+text-decoration: underline;
+```
+
+**Shorthand font property**
+It can get tedious typing different properties out individually. Fortunately there is a shorthand way to do this.
+
+```
+instead of typing out:
+font-style: italic;
+font-size: 24px;
+font-family: Times;
+```
+
+we can type:
+```
+font: italic 24px Times;
+```
+
+font combines all of these properties in a single line:
+
+1. font-style
+2. font-variant
+3. font-weight
+4. font-size
+5. line-height
+6. font-family
+
+When using this shorthand property they must be within a specific order. 
+
+```
+font: font-style font-variant font-weight font-size font-family;
+```
+```
+font: italic small-caps bold 24px "Times New Roman";
+```
+
+What if I leave something out?
+There are two properties that are required when using the font shorthand:
+
+font-size and font-family
+Everything else is optional. 
+
+If we leave out one of the optional properties, it will just use the default.
+
+```
+font: italic 24px Times;
+```
+```
+font: 24px Times;
+``` 
+- since font-style isn't specified, it defaults to normal and not italic 
+
+Key Points About the font shorthand:
+- font size and font family are required
+- things need to go in the right order
+- if we leave an optional property out, it will use the default
 
 
 
+[CSS-Tricks article][https://css-tricks.com/snippets/css/font-shorthand/]
+[CSS font property documentation from W3Schools][https://www.w3schools.com/css/css_font_shorthand.asp]
+or Google: 'font shorthand order'
+
+specific fonts:
+Courier, Helvetica
+
+generic fonts:
+serif, monospace
+
+If worried about fonts not being installed on all computers, another option is by using Google Web Fonts.
+
+Since they do not have to be installed on the user's computer in order to work!
+
+[!Try Google Web Fonts][https://developers.google.com/fonts/docs/getting_started]
+
+can find all the available fonts here:
+[https://fonts.google.com]
+
+- read the get started with Google Fonts API documentation
+
+**How to add Google Fonts Api**
+- add a stylesheet link to request the desired web font:
+```
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Font+Name">
+  ```
+
+- style an element with the requested web, font either in a style sheet:
+```
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Font+Name">
+```
+
+- or with an inline style on the element itself:
+```
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Font+Name">
+```
+
+always list a fallback web-safe font in order to avoid unexpected behaviors. 
+
+Add generic font name like serif or sans-serif to the end of the list.
+
+
+
+
+
+
+
+[!w3schools color picker tool][https://www.w3schools.com/colors/colors_picker.asp]
+[!w3schools hsl colors][https://www.w3schools.com/colors/colors_hsl.asp]
 ### Resources
 - [!Wiki CSS][https://en.wikipedia.org/wiki/CSS] 
 
