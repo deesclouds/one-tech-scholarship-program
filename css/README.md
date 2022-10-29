@@ -466,7 +466,7 @@ flex-wrap: wrap
 ```
 this wraps the elements down the window
 
-
+[!mdn flexbox][https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox]
 [!w3schools color picker tool][https://www.w3schools.com/colors/colors_picker.asp]
 [!w3schools hsl colors][https://www.w3schools.com/colors/colors_hsl.asp]
 ### Resources
