@@ -449,6 +449,10 @@ This is semantics. Using markup to indicate meaning and not just appearance.
 
 em tag indicates what needs to be emphasized. A program that's reading the page aloud to the user will use tone of voice to convey importance. If the page is displayed to the user it might want to emphasize by using color or another property instead of italics.
 
+**Containers**
+
+nesting boxes is useful when using a box as a container for other boxes.
+
 
 
 
