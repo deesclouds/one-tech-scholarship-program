@@ -1,1 +1,54 @@
-/* add your CSS here */
+/* title */
+h3{
+    font-size: 20pt;
+    margin: 0;
+    padding: 5px;
+}
+/* container */
+.trading-card {
+    height: 788px;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid 4f84d5;
+    border-radius: 10px;
+    background-color:#4992bb;
+    box-shadow: 10px 5px 5px hsl(0, 0%, 50%);
+}
+.image-container{
+    border: 5px dotted #43a0a1;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+}
+.image {
+    height: auto;
+    width: 300px;
+    padding: 0;
+    margin: 0 0 0 -10px;
+    -webkit-clip-path: circle(35% at 52% 48%);
+    clip-path: circle(35% at 52% 48%);
+}
+/* facts */
+.interesting-facts{
+    font-style: italic; 
+    margin: 0;
+}
+ul{
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+/* items within the li */
+.animal-items {
+    font-weight: bold;
+}
+/* borders for the trading card */
+.trading-card , .all-about {
+    border: 1px solid #36bb6d;
+}
+.all-about, h3 {
+    background-color: #3cae87;
+    border-radius: 5px;
+    padding: 4px 10px 0 10px;
+    margin: 2px;
+}
