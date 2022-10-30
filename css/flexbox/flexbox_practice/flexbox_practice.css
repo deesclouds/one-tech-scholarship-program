@@ -1,0 +1,19 @@
+.container{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+  }
+  
+  .box{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .red{
+    background-color: red;
+  }
+  
+  .black{
+    background-color: black;
+  }
