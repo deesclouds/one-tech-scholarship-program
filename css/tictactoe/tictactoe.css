@@ -1,0 +1,22 @@
+ul{
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    
+    margin: 5px;
+    float: left;
+    list-style: none;
+    background-color: skyblue;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 80px;
+    font-family: sans-serif; 
+    
+}
