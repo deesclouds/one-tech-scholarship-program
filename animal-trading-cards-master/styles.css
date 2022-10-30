@@ -1,10 +1,7 @@
-/* title */
 h3{
     font-size: 20pt;
-    margin: 0;
     padding: 5px;
 }
-/* container */
 .trading-card {
     height: 788px;
     width: 300px;
@@ -27,7 +24,6 @@ h3{
     -webkit-clip-path: circle(35% at 52% 48%);
     clip-path: circle(35% at 52% 48%);
 }
-/* facts */
 .interesting-facts{
     font-style: italic; 
     margin: 0;
@@ -38,11 +34,9 @@ ul{
 li {
     list-style: none;
 }
-/* items within the li */
 .animal-items {
     font-weight: bold;
 }
-/* borders for the trading card */
 .trading-card , .all-about {
     border: 1px solid #36bb6d;
 }
