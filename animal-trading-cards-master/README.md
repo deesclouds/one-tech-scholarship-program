@@ -1,7 +1,7 @@
 # animal-trading-cards
 Animal Trading Cards Project for Udacity's Web Nanodegree Programs.
 
-## Resources that were used to complete this project.
+## Resources used.
 
 -[!mdn-box-shadow][https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow]
 -[!clip path generator][https://www.cssportal.com/css-clip-path-generator/]
