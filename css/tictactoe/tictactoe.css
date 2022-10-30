@@ -1,22 +1,27 @@
+html{
+    font-size: 80px;
+}
+
 ul{
     margin: 0;
     padding: 0;
-    /* border: 2px solid black; */
-    height: 300px;
-    width: 300px;
+    border: 2px solid black;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 li{
-    
-    margin: 5px;
-    float: left;
+    padding-bottom: .1em;
+    margin: .1em;
+    /* float: left; */
     list-style: none;
     background-color: skyblue;
-    width: 90px;
-    height: 90px;
+    width: 1em;
+    height: 1em;
     text-align: center;
-    font-size: 80px;
+    /* font-size: 80px; */
     font-family: sans-serif; 
     
 }
