@@ -6,14 +6,14 @@ h3{
     height: 788px;
     width: 300px;
     padding: 10px;
-    border: 2px solid #4f84d5;
+    border: 2px solid rgb(79, 132, 213);
     border-radius: 10px;
     background-color:#4992bb;
     box-shadow: 10px 5px 5px hsl(0, 0%, 50%);
 }
 .image-container{
     border: 5px double rgba(255, 255, 0, 0.795);
-    border-radius: 5px;
+    border-radius: 75%;
     margin: 5px 0 5px 0;
 }
 .image {
@@ -21,8 +21,7 @@ h3{
     width: 300px;
     padding: 0;
     margin: 0 0 0 -10px;
-    -webkit-clip-path: circle(35% at 52% 48%);
-    clip-path: circle(35% at 52% 48%);
+    clip-path: ellipse(48% 50% at 52.1% 50%);
 }
 .interesting-facts{
     font-style: italic; 
