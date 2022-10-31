@@ -6,13 +6,14 @@ h3{
     height: 788px;
     width: 300px;
     padding: 10px;
-    border: 2px solid 4f84d5;
+    border: 2px solid #4f84d5;
     border-radius: 10px;
     background-color:#4992bb;
     box-shadow: 10px 5px 5px hsl(0, 0%, 50%);
 }
 .image-container{
-    border: 5px dotted #43a0a1;
+    /* border: 5px dotted #43a0a1; */
+    border: 5px double rgba(255, 255, 0, 0.795);
     border-radius: 5px;
     margin: 5px 0 5px 0;
 }
