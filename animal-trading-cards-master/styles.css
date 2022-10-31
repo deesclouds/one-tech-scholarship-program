@@ -13,15 +13,17 @@ h3{
 }
 .image-container{
     border: 5px double rgba(255, 255, 0, 0.795);
-    border-radius: 75%;
+    border-radius: 50%;
     margin: 5px 0 5px 0;
+    height: 400px;
+    width: 292px;
 }
 .image {
     height: auto;
     width: 300px;
     padding: 0;
     margin: 0 0 0 -10px;
-    clip-path: ellipse(48% 50% at 52.1% 50%);
+    clip-path: ellipse(48% 49% at 52.1% 50%);
 }
 .interesting-facts{
     font-style: italic; 
