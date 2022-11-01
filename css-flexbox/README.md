@@ -33,6 +33,16 @@ The two axis control the flow of space in flexbox and correspond to the align-it
 
 Drawing out flex containers first can be helpful for mapping out axes and direction.
 
+**Ordering Elements with Flexbox**
+Three ways to set the order which items appear within flexbox container. 
+
+- moving html code for the elements to reorder
+- row-reverse or column-reverse: will reverse the order in the specified row or column
+- using order property of the individual items inside the grid.
+
+**Ordering Elements Demo**
+- flex-direction: row; lays elements out from left to right
+- flex-direction: row-reverse; flip order and display elements from right to left
 
 
 ## Resources
