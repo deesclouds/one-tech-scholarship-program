@@ -17,11 +17,14 @@ Only the CSS that we want to change goes there. The original CSS rules still app
 
 
 What is **viewport**?
+The part of the document that is currently visible.
+
 The area of the window in which web content can be seen. We use the dimensions of the viewport(usually the width, but sometimes the height) as the basis of our media queries.
+
+Viewports are mutable.
 
 Mobile-ready site then develop to a big website.
 
 # Resources:
 
 [!viewport][https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts#What_is_a_viewport]
-[!viewport meta tag][https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag]
