@@ -61,6 +61,7 @@ Three ways to set the order which items appear within flexbox container.
 Flexbox is all about aligning, justifying & distributing.
     
 ## Resources
+[!MDN Align & Justify][https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#Alignment_justification_and_distribution_of_free_space_between_items]
 [!MDN Flexbox][https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Ordering_flex_items]
 [!MDN Flexbox][https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox]
 [!MDN axes&direction][https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#The_two_axes_of_flexbox]
