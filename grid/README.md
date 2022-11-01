@@ -56,6 +56,43 @@ The grid-area property specifies a particular area or set of rows and columns th
 
 grid-area is shorthand for [grid-row-start, grid-column-start, grid-row-end, grid-column-end].
 
+**Working with Grid Areas**
+the grid-area property defines the space an element takes up in the grid by setting values for the row it starts and ends in, and the column it starts and ends in.
+
+#one {
+    <!-- row start/ column start/ row end/ column end -->
+    grid-area: 1/2/3/3;
+}
+
+the element with the id, one would start at the first row and the first column, and end at the third row (which is the end of the second row if there is no third row) and the third column.
+
+the grid-area CSS property is shorthand for grid-row-start, grid-column-start, grid-row-end, and grid-column-end, and it defines the area that an element occupies in a grid.
+
+Grid Areas Summary
+grid-template-areas is the property used to name the rows and columns of a grid and set its layout. It could look like this:
+
+```
+.container {
+      display:grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd sd main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+```
+the named areas in the grid are then assigned to each element according to where we want them to be displayed in the grid:
+
+```
+.header {
+    grid-area: hd;
+}
+```
+
+in the example above the element with the class header will stretch across the entire first row of columns because we have assigned it the grid-area hd, and we have defined the area hd with the value for grid-template-areas in the parent element.
+
+
 # Resource
 [!Grid visualizer & generator][https://cssgrid-generator.netlify.com/]
 [!Grid or Flexbox?][https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412]
