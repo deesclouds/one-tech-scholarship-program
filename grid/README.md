@@ -42,8 +42,22 @@ grid-template-rows: 160px 60px;
 
 creates a grid with two columns and rows.
 
+A CSS Grid us made up of rows and .columns which are defined using CSS properties grid-template-columns & grid-template-rows, which take as values the size of each track.
+
+**Grid Areas**
+The grid-area property specifies a particular area or set of rows and columns that a grid item occupies. it is applied to the grid item itself with CSS. Here is an example:
+
+```
+.item{
+    <!-- places the item from rows 1-2 and columns 2-3 -->
+    grid-area: 1/2/3/3
+}
+```
+
+grid-area is shorthand for [grid-row-start, grid-column-start, grid-row-end, grid-column-end].
 
 # Resource
+[!Grid visualizer & generator][https://cssgrid-generator.netlify.com/]
 [!Grid or Flexbox?][https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412]
 [!Grid vs. Flexbox][https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf]
 [!Does CSS Grid Replace Flexbox?][https://css-tricks.com/css-grid-replace-flexbox/]
