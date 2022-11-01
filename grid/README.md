@@ -92,9 +92,37 @@ the named areas in the grid are then assigned to each element according to where
 
 in the example above the element with the class header will stretch across the entire first row of columns because we have assigned it the grid-area hd, and we have defined the area hd with the value for grid-template-areas in the parent element.
 
+**Advanced Grid**
+CSS Grid includes advanced capabilities for creating large and complex grids. Some of these are:
+
+Algorithmic values - small things that turn our work into something elegant.
+
+    - the fr unit
+    - track listings with repeat()notation
+    - track sizing and minmax()
+
+Automagic Grid
+- fr unit represents a fraction of the available space in the grid container.
+
+- the repeat() notation can be used to quickly layout many tracks for large grids.
+
+```
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+```
+
+can also be written as:
+```
+grid-template-columns: repeat(7, 1fr);
+```
+
+grid-auto-rows: can be used to generate the number of rows based on the content and available space:
+```
+grid-auto-rows: minmax(100px, auto);
+```
+this would create rows at least 100px tall and can be as tall as the content inside them demands.
 
 # Resource
-
+[!How items Flow in Grid][https://gedd.ski/post/grid-item-placement/]
 [!Complete Grid Guide][https://css-tricks.com/snippets/css/complete-guide-grid/]
 [!Grid visualizer & generator][https://cssgrid-generator.netlify.com/]
 [!Grid or Flexbox?][https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412]
