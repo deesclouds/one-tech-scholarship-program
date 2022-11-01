@@ -23,6 +23,23 @@ grid-template-columns
 grid-template-rows
 grid-gap: defines the gutters [distance between rows and columns] we can use grid-gap on the parent container that has the display property set to grid.
 
+**Rows and Columns in Action**
+grid-template-columns property defines the column layout of the grid. this is how many sections the page should be divided into vertically.
+
+The values for this property are the explicit value for each column and the number of columns is defined by the number of values entered.
+
+```
+grid-template-columns: 60px 60px;
+```
+
+creates two columns of 60px each. If we had two items inside our grid and didn't set their position explicitly, the first item would be placed in the first column and the second item in the second. grid-template-rows follows the same logic.
+
+```
+grid-template-columns: 60px 60px;
+grid-template-rows: 160px 60px;
+```
+
+creates a grid with two columns and rows.
 
 
 # Resource
