@@ -104,9 +104,11 @@ The medium screens media query is new, and we use the keyword and to build a com
 
 Can set up as many breakpoints as we want but they can start to conflict pretty quickly.
 
+Complex media queries can be built using the keyword and to bound CSS rules between a range using min-width and max-width.
 
-
+Media queries are a vast landscape of possibility, most of which we'll probably never use but, having a strong grasp of media queries and responsive breakpoints is essential for a web developer.
 # Resources:
 
+[!MDN media queries][https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries]
 [!viewport][https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts#What_is_a_viewport]
 [!viewport meta tag][https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag]
