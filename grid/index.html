@@ -1,0 +1,37 @@
+<!-- add a grid to the container -->
+<!-- use a number of columns and/or rows that changes the default layout -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+
+  <style>
+    /* create grid in container below */
+  .container{
+    display: grid;
+    grid-template-columns: 260px 260px;
+    gap: 20px;
+    grid-template-rows: 160px 160px;
+
+  }
+  .box{
+        width: 250px;
+        height: 150px;
+        border: 1px solid red;
+    }
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div class="box"> Space 1</div>
+    <div class="box"> Space 2</div>
+    <div class="box"> Space 3</div>
+    <div class="box"> Space 4</div>
+    <div class="box"> Space 5</div>
+  </div>
+  </body>
+</html>
