@@ -57,6 +57,8 @@ Three ways to set the order which items appear within flexbox container.
     - space-around
     - space-between
     - space-evenly
+**Aligning & Justifying in Action**
+Flexbox is all about aligning, justifying & distributing.
     
 ## Resources
 [!MDN Flexbox][https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Ordering_flex_items]
