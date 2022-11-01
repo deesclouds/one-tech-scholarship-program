@@ -28,3 +28,4 @@ Mobile-ready site then develop to a big website.
 # Resources:
 
 [!viewport][https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts#What_is_a_viewport]
+[!viewport meta tag][https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag]
