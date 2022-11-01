@@ -102,6 +102,8 @@ A simple example would be creating 2 different breakpoints so that up to x width
 
 The medium screens media query is new, and we use the keyword and to build a complex media query that evaluates both a min and max to create a range for the CSS rules to apply, in this case if the width of the viewport is between 600px - 900px.
 
+Can set up as many breakpoints as we want but they can start to conflict pretty quickly.
+
 
 
 # Resources:
