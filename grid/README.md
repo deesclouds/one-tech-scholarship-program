@@ -18,6 +18,13 @@ CSS Grid does not replace Flexbox. Each can achieve things that the other is not
 
 At the highest level CSS Grid excels at creating layouts for a webpage, while Flexbox is a master of content flow for each element that makes up the page layout.
 
+**Rows and Columns**
+grid-template-columns
+grid-template-rows
+grid-gap: defines the gutters [distance between rows and columns] we can use grid-gap on the parent container that has the display property set to grid.
+
+
+
 # Resource
 [!Grid or Flexbox?][https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412]
 [!Grid vs. Flexbox][https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf]
