@@ -15,3 +15,6 @@ Separate pages within a web app can be stored in the same folder and linked to e
 
 ```<a href='go.html'>Go to page</a>```
 
+# Resources:
+[!Creating Complex Grid Layouts][https://rachelandrew.co.uk/archives/2015/02/04/css-grid-layout-creating-complex-grids/]
+[!Nesting & Overlapping of Grid items][https://gridbyexample.com/examples/example21/]
