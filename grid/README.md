@@ -94,6 +94,8 @@ in the example above the element with the class header will stretch across the e
 
 
 # Resource
+
+[!Complete Grid Guide][https://css-tricks.com/snippets/css/complete-guide-grid/]
 [!Grid visualizer & generator][https://cssgrid-generator.netlify.com/]
 [!Grid or Flexbox?][https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412]
 [!Grid vs. Flexbox][https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf]
