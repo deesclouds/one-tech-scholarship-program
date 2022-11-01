@@ -44,7 +44,20 @@ Three ways to set the order which items appear within flexbox container.
 - flex-direction: row; lays elements out from left to right
 - flex-direction: row-reverse; flip order and display elements from right to left
 
-
+**Aligning Items & Justifying Content w/ Flexbox**
+- align items on the cross axis use align-items with:
+    - stretch
+    - flex-start
+    - flex-end
+    - center
+- justify-content on the main axis:
+    - flex-start
+    - flex-end
+    - center
+    - space-around
+    - space-between
+    - space-evenly
+    
 ## Resources
 [!MDN Flexbox][https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Ordering_flex_items]
 [!MDN Flexbox][https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox]
