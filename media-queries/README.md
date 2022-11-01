@@ -73,6 +73,36 @@ If the browser width of the webpage being viewed is above 1100px wide, then the 
 
 Media queries can help change the layout for different screen sizes.
 
+# Multiple Breakpoints
+
+There are some development moments that will call for 3 possible layouts.
+
+A simple example would be creating 2 different breakpoints so that up to x width one set of CSS rules apply, then between x and y width a second set would apply, and then for anything beyond a width of y a third set of CSS rules would apply.
+
+```
+/* Anything smaller than first breakpoint 600px */
+.container{
+    // rules for small screen
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:900px) {
+    .container {
+    // rules for medium-sized screen
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    container {
+        // rules for large screen
+    }
+}
+```
+
+The medium screens media query is new, and we use the keyword and to build a complex media query that evaluates both a min and max to create a range for the CSS rules to apply, in this case if the width of the viewport is between 600px - 900px.
+
+
 
 # Resources:
 
