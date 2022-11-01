@@ -22,6 +22,7 @@ At the highest level CSS Grid excels at creating layouts for a webpage, while Fl
 grid-template-columns
 grid-template-rows
 grid-gap: defines the gutters [distance between rows and columns] we can use grid-gap on the parent container that has the display property set to grid.
+*grid-gap is deprecated. gap is used instead*
 
 **Rows and Columns in Action**
 grid-template-columns property defines the column layout of the grid. this is how many sections the page should be divided into vertically.
