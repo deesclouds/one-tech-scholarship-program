@@ -107,6 +107,13 @@ Can set up as many breakpoints as we want but they can start to conflict pretty 
 Complex media queries can be built using the keyword and to bound CSS rules between a range using min-width and max-width.
 
 Media queries are a vast landscape of possibility, most of which we'll probably never use but, having a strong grasp of media queries and responsive breakpoints is essential for a web developer.
+
+# Building Responsive Layouts with Flexbox and Grid
+
+CSS grid is one of the most useful features that can easily nest grids inside each other to create elegant, complex layouts. To nest CSS grids simply set ```display``` property of the container element to grid then select the child grid item you want to make nested grid and set the display property of that element to grid as well. 
+
+
+
 # Resources:
 
 [!MDN media queries][https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries]
