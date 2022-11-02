@@ -112,7 +112,20 @@ Media queries are a vast landscape of possibility, most of which we'll probably 
 
 CSS grid is one of the most useful features that can easily nest grids inside each other to create elegant, complex layouts. To nest CSS grids simply set ```display``` property of the container element to grid then select the child grid item you want to make nested grid and set the display property of that element to grid as well. 
 
+# Nesting Grids in Practice
 
+Nesting CSS grids is simply can be done using the ```display: grid``` rule for both a parent and child element.
+
+```
+.container {
+    display: grid;
+    // ...
+}
+
+#one {
+    display:grid
+}
+```
 
 # Resources:
 
