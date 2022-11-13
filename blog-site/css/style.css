@@ -11,6 +11,22 @@ html,body {
     font-size: 2rem;
 }
 
+.navbar{
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.navbar-item {
+    padding: 1em;
+}
+.navbar-item .logo{
+    position: relative;
+    top: -75px;
+}
 footer{
     font-size: .5rem;
 }
