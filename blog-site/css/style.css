@@ -1,8 +1,16 @@
-html {
-    background-color: bisque;
-    overscroll-behavior: none;
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    overscroll-behavior: none;
+}
+
+html,body {
+    background-color: bisque;
+    font-size: 2rem;
+}
+
+footer{
+    font-size: .5rem;
 }
