@@ -1,1 +1,37 @@
 @import "style.css";
+
+h1{
+    text-align: center;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+    font-size: 24pt;
+    color: #03174d;
+    font-size: 32pt;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+}
+.avatar{
+    width: 350px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    clip-path: circle(38%);
+}
+.author-info{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    font-size: 1em;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+    background-color: rgba(255, 228, 196, 0.726);
+    border-radius: 20px;
+   border:2px solid  #03174d;
+    box-shadow: 10px 10px 0 #03174d;
+}

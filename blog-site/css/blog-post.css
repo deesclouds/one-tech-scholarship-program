@@ -1,1 +1,22 @@
 @import "style.css";
+
+.blog-post-container {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: rgba(255, 228, 196, 0.726);
+  border-radius: 20px;
+}
+span {
+  display: block;
+  padding: 0.5em;
+}
+
+img {
+  margin: 0 5.56rem;
+  border-radius: 12px;
+}
+
+p {
+  text-align: center;
+  padding: 1em 0;
+}

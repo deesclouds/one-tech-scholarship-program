@@ -44,8 +44,8 @@ Yeah!! Milligram is amazing.
 </ol>
 
 Colors:
--
--
+-   #8c1880,  #00384a,  #087071,  #de5357 and  #3d2433.
+-   #05878a,  #074e67,  #5a175d,  #67074a and  #dd9933.
 -
 
 Buttons:
