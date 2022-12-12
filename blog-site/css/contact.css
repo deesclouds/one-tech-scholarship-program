@@ -5,30 +5,15 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* html, body {
-    height: 100vh;
-    background: #666666;
-    font-family: 'Balsamiq Sans', sans-serif;
-  }
-  
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 
   .contact-form{
-    margin-top: 1em;
+    margin-top: 3em;
     margin-bottom: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
   .card {
     margin: auto;
-    width: 70%;
+    width: 65%;
     padding: 30px 90px 90px 90px;
     border: 6px solid #03174d;
     box-shadow: 20px 20px 0 #03174d;
@@ -130,12 +115,15 @@
     
     .card {
       padding: 20px;
+      width: 13em;
     }
     
     .card h2 {
       font-size: 34px;
     }
-    
+    .form-group textarea{
+      height: 1em;
+    }
     .card .row input[type="submit"] {
       width: 100%;
     }
