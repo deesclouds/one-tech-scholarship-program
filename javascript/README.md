@@ -148,7 +148,7 @@ You'll see that we use var instead of let and const in some of the demo videos i
 When creating a variable, we write the name of the variable using camelCase. The first word is lowercase, and the following words are uppercase. Also use a variable name that accurately, but succinctly describes what the data is about. 
 
 ```
-const totalAfterTax = 53.03; // uses camelCase if the variabl name is multiple words
+const totalAfterTax = 53.03; // uses camelCase if the variable name is multiple words
 const tip = 8; // uses lowercase if the variable name is one word
 ```
 
