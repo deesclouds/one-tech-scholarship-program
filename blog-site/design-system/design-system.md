@@ -47,7 +47,8 @@ Colors:
 -   #8c1880,  #00384a,  #087071,  #de5357 and  #3d2433.
 -   #05878a,  #074e67,  #5a175d,  #67074a and  #dd9933.
 -
-
+Links & Logo color: #e78200
+H1, Navbar colors: #51d0f6 
 Buttons:
 - Default Button
 - Outlined Button
