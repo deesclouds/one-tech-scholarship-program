@@ -1,11 +1,9 @@
-@import "style.css";
-
+/* @import "style.css"; */
 h1{
     text-align: center;
     align-items: flex-start;
-    padding-top: 1.5rem;
-    font-size: 24pt;
-    color: #03174d;
+    /* padding-top: 1.5rem; */
+    color: #51d0f6;
     font-size: 32pt;
 }
 .about-me{
