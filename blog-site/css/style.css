@@ -2,6 +2,7 @@
 @import "blog-post.css";
 @import "blog.css";
 @import "about.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
