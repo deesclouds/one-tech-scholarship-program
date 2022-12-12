@@ -161,5 +161,104 @@ This is important when working on larger projects that will be accessed by multi
 
 JavaScript is very lenient about naming. Following naming conventions is important to help the people looking at the code understand it. The machine that runs it doesn't care. 
 
+## Indexing
+
+We can access an individual character in a string. To access this character we can use the character's location in a string called its index. Just place the index of the character inside square brackets starting with [0] as the first character immediately after the string. 
+
+"James"[0];
+Returns: "J"
+
+or commonly seen like this:
+const name = "James";
+name[0];
+Returns: "J"
+
+Characters within a string are indexed starting from 0, where the first character is at position 0, to n-1, where the last character is at position n-1 (n represents the total number of characters within a string).
+
+We can use the String's charAt() method to access individual characters. 
+
+const quote = "Stay awhile and listen!";
+console.log(quote[6]);
+
+Ex: quote.charAt(6) would return "w".
+
+## Escaping strings
+
+"The man whispered, "please speak to me.""
+
+Uncaught Syntax Error: Unexpected identifier
+
+'\' use this to escape a string
+
+Escaping a character tells JS to ignore the character's special meaning and just use the literal value of the character. This is helpful for characters that have special meanings like in our previous example with quotes ```""```.
+
+Because quotes are used to signify the beginning and end of a string, you can use the backslash character to escape the quotes in order to access the literal quote character. 
+
+console.log("The man whispered, \"please speak to me.\"")
+
+Returns: The man whispered, "please speak to me."
+
+This guaranteed that the JavaScript engine doesn't misinterpret the string and result in an error.
+
+## Special characters
+
+Quotes aren't only special characters that need to be escaped, there's actually quite a few. 
+
+A list of some common special characters in JS.
+
+Code	Character
+\\	    \ (backslash)
+\"	    '' (double quote)
+\'	    ' (single quote)
+\n	    newline
+\t	    tab
+
+\n and \t : are unique because they add additional whitespace to your Strings. 
+A newline character will add a line break and a tab character will advance your line to the next tab stop.
+
+"Up up\n\tdown down"
+Returns:
+Up up
+    down down
+
+"The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains the names on the roster."
+
+Returns:
+ "The file located at "C:\\Desktop\My Documents\Roster\names.txt" contains the names on the roster."
+
+## Comparing Strings
+
+Comparison operators can also be used to compare strings.
+
+"Yes" == "yes"
+Returns: false
+
+a. Case-sensitive
+- when comparing strings, case matters. While both strings use the same letters (and those letters appear in the same order), the first letter in the first string is a capital Y while the first letter in the string is a lowercase y.
+
+'Y' != 'y'
+Returns: true
+
+b. Internal Working
+- strings are compared character-by-character in alphabetical order. Each character has a specific numeric value, coming from [!ASCII value of printable characters](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
+Ex: 'A' = 65, 'a'= 97
+
+[!ASCII table](http://www.ascii-code.com/)
+
+How to loop through the characters in a string and print the ASCII values of all the characters.
+```
+const my_string = "Udacity";
+
+// Iterate using a Loop
+for (let i = 0; i < my_string.length; i++) {
+  console.log(my_string.charCodeAt(i));
+}
+```
+
+
+
+
+
+
 
 
