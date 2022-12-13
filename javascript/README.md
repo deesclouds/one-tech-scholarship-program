@@ -255,6 +255,141 @@ for (let i = 0; i < my_string.length; i++) {
 }
 ```
 
+## Booleans
+
+Boolean variables can take a value of true or false.
+
+Yes or no
+On or off
+1 or 0
+
+A boolean variable is mainly essential in evaluating the outcome of conditionals (comparisons). 
+
+The result of a comparison is always a boolean variable.
+
+True values will run
+False values will NEVER run
+
+
+## Null, Undefined, and NaN
+
+What is the difference between null and undefined?
+
+Null refers to the "value of nothing".
+Has no value. Means it's totally empty. It was purposely assigned a value of nothing. 
+
+Undefined refers to the "absence of value".
+
+Undefined:
+Exists but doesn't have a value yet.
+
+What is NaN?
+NaN stands for "Not-A-Number" and it's often returned indicating an error with number operations. 
+
+If we wrote code that performed a math calculation, and the calculation failed to produce a valid number, NaN might be returned.
+
+//calculating the square root of a negative number will return NaN.
+Math.sqrt(-10)
+//trying to divide a string by 5 will return Nan
+"hello"/5
+
+let signedIn;
+console.log(signedIn);
+Returns: undefined
+
+This occurs because the variable exists but a value was not assigned yet. 
+
+## Equality
+
+Using comparison operators in situations where the values we're comparing have different data-types, it could lead to some interesting results. 
+
+Ex: "1" == 1
+returns: true
+
+0 == false
+returns: true
+* unable to differentiate 0 from false *
+
+' ' == false
+returns: true. 
+both the operands on either side of the == operator are first converted to zero, before comparison.
+
+Reason for this is Type Conversion. 
+
+The case of regular comparison, the operands on either side of the == operator are first converted to numbers, before comparison. Therefore ' ', false, and 0 are all considered equal. Similarly, a '1' and 1 are also considered equal. If we don't want to convert the operands, before comparison, we have to use a strict comparison ===. that is explained below. 
+
+## Implicit Type Coercion
+
+JavaScript is known as a loosely typed language.
+
+Basically JavaScript code, you do not need to specify data types. When code is interpreted by the JavaScript engine it will automatically be converted into the "appropriate" data type. This is implicit type coercion.
+
+"julia" + 1
+returns: "julia1"
+
+the number 1 is converted into the string "1" and concatenated to the string "julia".
+
+This makes JS unique from other programming languages, but can lead to some quirky behavior when doing operations and comparisons on mixed data types.
+
+## Strongly Typed vs Loosely Typed
+
+Strongly typed language is programming language that is more likely to generate errors if data does not closely match an expected type.
+
+ex:
+int count = 1;
+string name = "Julia";
+double num = 1.2932;
+float price = 2.99;
+
+Loosely typed language don't need to specify data types; this provides a lot more flexibility and is often faster to write. Loose typing can lead to errors that are hard to diagnose due to implicit type coercion.
+
+let count = 1;
+const name = "Julia";
+const num = 1.2932;
+const price = 2.99;
+
+## Strict Vs Loose Equality
+
+"1" == true
+Returns: true
+
+When using == or != operators, JS first converts each value to the same type if they're not already the same type this is why it's called type coercion!
+
+This is often no the behavior we want and it's actually considered bad practice to use == and != operators when comparing values for equality.
+
+Instead it's better to use strict equality to see if numbers, strings, or booleans, etc. are identical in type and value without doing the type conversion first. 
+
+"1" === 1
+returns false
+
+this returns false because the string "1" is not the same type and value as the number 1
+
+
+Strict equality and strict non-equality
+
+=== and !==
+
+0 !== true
+returns: true
+
+"Hello" % 10
+and 
+"Number(Hello)"
+
+returns: NaN
+
+When testing for equality both Type Conversion and Strict Equality can influence the result of the expression.
+"3" > 1 is true because 3 is greater than 1 (implicit type coercion)
+true >= 0 is true because 1 greater than or equal to 0 (implicit type coercion)
+1 !== false is true because 1 does not equal false (strict equality)
+3 === 3 is true because 3 equals 3 (strict equality)
+
+
+## Semicolons
+Semicolons makes it clear where one statement ends and another begins. 
+
+This is handy when multiple lines of code are written on the same line (which is valid JavaScript, but definitely not recommended!)
+
 
 
 
