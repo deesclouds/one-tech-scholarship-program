@@ -48,10 +48,18 @@ body {
   margin: auto;
   height: 500px;
 }
+.heading-container{
+  background-color: #03174d;
+  height: 2rem;
+  width: 25%;
+  margin:auto;
+  margin-top: .5rem;
+  border-radius: 40px;
+}
 .blog-heading {
   text-align: center;
-  padding: 2rem;
-  color: #51d0f6;
+  /* padding: 2rem; */
+  color: #EFEFEF;
   font-size: 32pt;
 }
 .blog-cards {
