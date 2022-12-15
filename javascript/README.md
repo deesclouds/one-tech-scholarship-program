@@ -396,6 +396,15 @@ JS has ways to occasionally predict where semicolons should be, like how type co
 
 It's good practice to not depend on it. 
 
+Learned Javascript Data Types:
+- numbers
+- strings
+- booleans
+- null 
+-undefined
 
+Storing Data in Variables 
+
+Basic Operations
 
 
