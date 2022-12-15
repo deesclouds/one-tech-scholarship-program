@@ -390,7 +390,11 @@ Semicolons makes it clear where one statement ends and another begins.
 
 This is handy when multiple lines of code are written on the same line (which is valid JavaScript, but definitely not recommended!)
 
+Not adding semicolons to the end of each line can cause bugs and errors in your programs. 
 
+JS has ways to occasionally predict where semicolons should be, like how type coercion can result in some unexpected quirky behavior in JS. 
+
+It's good practice to not depend on it. 
 
 
 
