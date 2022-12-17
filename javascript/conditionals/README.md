@@ -119,3 +119,42 @@ With more complex problems there's more things to consider before we can actuall
 
 We can represent complex problems by combining logical expressions with special operators called logical operators. 
 
+Ex: this is how Julia figures out here weekend plans:
+
+var colt = "not busy";
+var weather = "nice";
+
+if (colt === "not busy" && weather === "nice") {
+    console.log("got to the park");
+}
+
+returns: "go to the park"
+
+The '&&' symbol is the logical AND operator, this is used to combine two logical expressions into one larger logical expression.
+
+If both smaller expressions are true, then the entire expression evaluates to true. If either one of the smaller expressions is false, then the whole logical expression is false.
+
+Another way to think about it is when the && operator is placed between the two statements, the code literally reads, "if Colt is not busy AND the weather is nice, then go to the park".
+
+## Logical expressions
+
+Logical expressions are similar to mathematical expressions, except logical expressions evaluate to either true or false.
+
+11 != 12
+returns true
+
+We've already seen logical expressions when we write comparisons. A comparison is just a simple logical expression. 
+
+Similar to mathematical expressions that use +, -, *, / and %, there are logical operators %%, || and ! that we can use to create more complex logical expressions. 
+
+## Logical operators
+
+Logical operators can be used in conjunction with boolean values (true and false) to create complex logical expressions. 
+
+By combining two boolean values together with a logical operator, we can create a logical expression that returns another boolean value. 
+
+&&      Logical AND         value1 && value 2       Returns true if both value 1 AND value 2 evaluate to true
+
+||      Logical OR          value1 || value 2       Returns true if either value 1 OR value 2 evaluate to true
+
+!       Logical NOT         !value1         Returns the opposite of value 1. If value1 is true, then !value1 is false.
