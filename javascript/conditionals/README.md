@@ -103,3 +103,12 @@ if (weather === "snow") {
 prints: "Wear what you have on."
 ```
 
+Adding an extra else if statement, we're adding an extra conditional statement. 
+
+If it's not going to snow, then the code will jump to the else if statement to see if it's going to rain. If it's not going to rain, then the code will jump to the else statement. 
+
+The else statement acts as the "default" condition in case all the other if statements are false.
+
+[!What-To-Wear-Flowchart](https://video.udacity-data.com/topher/2017/January/586e9836_what-to-wear-flowchart/what-to-wear-flowchart.jpeg)
+
+[!MDN-Else-if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#description)
