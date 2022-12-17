@@ -158,3 +158,6 @@ By combining two boolean values together with a logical operator, we can create 
 ||      Logical OR          value1 || value 2       Returns true if either value 1 OR value 2 evaluate to true
 
 !       Logical NOT         !value1         Returns the opposite of value 1. If value1 is true, then !value1 is false.
+
+Tip: Logical expressions are evaluated from left to right. Similar to mathematical expressions, logical expressions can also use parentheses to signify parts of the expression that should be evaluated first.
+
