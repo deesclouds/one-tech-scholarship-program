@@ -112,3 +112,10 @@ The else statement acts as the "default" condition in case all the other if stat
 [!What-To-Wear-Flowchart](https://video.udacity-data.com/topher/2017/January/586e9836_what-to-wear-flowchart/what-to-wear-flowchart.jpeg)
 
 [!MDN-Else-if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#description)
+
+## More Complex Problems
+
+With more complex problems there's more things to consider before we can actually solve the problem. 
+
+We can represent complex problems by combining logical expressions with special operators called logical operators. 
+
