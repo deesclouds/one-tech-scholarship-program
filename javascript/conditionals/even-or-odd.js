@@ -25,8 +25,8 @@ Enter node even-or-odd.js in the terminal to run code
 
 const number = 6;
 
-if (number % 5 === 0){
-    console.log("Even");
+if (number % 2 === 0){
+    console.log("Even")
 }else {
     console.log("Odd");
 }
