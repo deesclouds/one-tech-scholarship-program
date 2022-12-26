@@ -109,27 +109,20 @@ let solved = false;
 * 2. sets the value of solved to true if the value of room matches the suspect's room
 */
 
-if (weapon === "poison" && room === "ballroom" && suspect === "Mr. Kalehoff") {
-  console.log((solved = true));
-} else if (
-  weapon === "trophy" &&
-  room === "gallery" &&
-  suspect === "Ms. Van Cleve"
-) {
-  console.log((solved = true));
-} else if (
-  weapon === "pool stick" &&
-  room === "billiards room" &&
-  suspect === "Mrs. Sparr"
-) {
-  console.log((solved = true));
-} else if (
-  weapon === "knife" &&
-  room === "dining room" &&
-  suspect === "Mr. Parkes"
-) {
-  console.log((solved = true));
+if (room === 'ballroom' && suspect === 'Mr. Kalehoff'){
+    weapon = 'poison';
+    solved = true;
+} else if (room === 'gallery' && suspect === 'Ms. Van Cleve'){
+    weapon = 'trophy';
+    solved = true;
+} else if (room === 'billiards room' && suspect === 'Mrs. Sparr'){
+    weapon = 'pool stick';
+    solved = true;
+} else if (room === 'dining room' && suspect === 'Mr. Parkes'){
+    weapon = 'knife';
+    solved = true;
 } else {
+
 }
 
 /* ****************************************** */
