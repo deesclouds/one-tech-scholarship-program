@@ -76,5 +76,8 @@ console.log(color);
 
 // "green"
 
+Nested Ternary Operators are not good practice because they reduce readability. 
 
+There is a counter view by Eric Elliott: who wrote about how Nested Ternaries are great. 
 
+https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340
