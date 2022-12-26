@@ -26,7 +26,7 @@ node balance.js
  */
 
 // change the values of `balance`, `checkBalance`, and `isActive` to test your code
-const balance = 325.0;
+const balance = 325.00;
 const checkBalance = true;
 const isActive = false;
 
