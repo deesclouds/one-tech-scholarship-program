@@ -162,3 +162,39 @@ By combining two boolean values together with a logical operator, we can create 
 Tip: Logical expressions are evaluated from left to right. Similar to mathematical expressions, logical expressions can also use parentheses to signify parts of the expression that should be evaluated first.
 
 [!MDN-Logical-Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators)
+
+## Truth Tables
+
+Truth tables are used to represent the result of all the possible combinations of inputs in a logical expression. A represents the boolean value on the left-side of the expression and B represents the boolean value on the right-side of the expression. 
+
+Truth tables can be helpful for visualizing the different outcomes from a logical expression. 
+
+Logical && (AND)
+
+A                    B                      A && B
+(evaluates)         (doesn't matter)        (outcome)
+true                true                       true
+true                false                      false
+->false               true                       false
+->false               false                      false
+
+
+Logical || (OR)
+A                    B                      A || B
+(evaluates)         (doesn't matter)        (outcome)
+->true                true                       true
+->true                false                      true
+false               true                       true
+false               false                      false
+
+
+
+What is short circuiting?
+It describes the event when later arguments in a logical expression are not considered because the first argument already satisfies the condition.
+
+In some scenarios, the value of B in logical AND and OR doesn't matter.
+
+Is if the value of the first part of the logical AND expression is false then it doesn't matter what the second part of the logical expression is because the code will not run. 
+
+Similarly to Logical OR expression is whichever part of the logical expression evaluates to true the result would be true.
+
