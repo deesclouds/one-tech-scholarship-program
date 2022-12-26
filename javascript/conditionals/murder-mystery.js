@@ -110,15 +110,19 @@ let solved = false;
 */
 
 if (room === 'ballroom' && suspect === 'Mr. Kalehoff'){
+    // True if Mr. Kalehoff was in the ballroom at the time of the murder
     weapon = 'poison';
     solved = true;
 } else if (room === 'gallery' && suspect === 'Ms. Van Cleve'){
+    // True if Ms. Van Cleve was in the gallery at the time of the murder
     weapon = 'trophy';
     solved = true;
 } else if (room === 'billiards room' && suspect === 'Mrs. Sparr'){
+    // True if Mrs. Sparr was in the billiards room at the time of the murder
     weapon = 'pool stick';
     solved = true;
 } else if (room === 'dining room' && suspect === 'Mr. Parkes'){
+    // True if Mr. Parkes was in the dining room at the time of the murder
     weapon = 'knife';
     solved = true;
 } else {
