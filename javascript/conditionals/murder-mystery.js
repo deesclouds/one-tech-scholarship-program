@@ -89,16 +89,16 @@ gallery	             Mr. Parkes	                 No
 /* TESTING LOGIC */
 
 // Change the value of `room` and `suspect` to test your code
-const room = "dining room";
+const room = "billiards room";
 
-const suspect = "Mrs. Sparr";
+const suspect = "Mr. Parkes";
 
 /* ****************************************** */
 
 /* IMPLEMENTATION LOGIC*/
 // Initial values
 
-let weapon = "knife";
+let weapon = "";
 
 let solved = false;
 
