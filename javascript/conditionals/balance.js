@@ -42,3 +42,18 @@ if ((checkBalance === false)) {
 } else {
   console.log("Your balance is negative. Please contact bank.");
 }
+
+/*
+Testing Code:
+Customer	    balance	    checkBalance	isActive	Expected Output
+Customer1	    -325	    true	         true	    Your balance is negative. Please contact bank.
+Customer2	    35	        true	         true	    Your balance is $35.00.
+Customer3	    35	        false	         true	    Thank you. Have a nice day!
+Customer4	    35	        true	         false	    Your account is no longer active.
+Customer5	    0	        true	         true	    Your account is empty.
+Customer6	    -325	    false	         true	    Thank you. Have a nice day!
+Customer7	    -325	    true	         false	    Your account is no longer active.
+Customer8	    35	        false	         false	    Thank you. Have a nice day!
+Customer9	    0	        false	         false	    Thank you. Have a nice day!
+Customer10	    0	        true	         false	    Your account is no longer active.
+*/
