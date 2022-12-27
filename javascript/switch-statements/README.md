@@ -106,3 +106,11 @@ NO
 
 [MDN Docs:Switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 
+Breaking problems down into smaller logical steps is all about being a good programmer. 
+
+Statements and logical operators will help solve even the most complicated problems. 
+
+Things to work on:
+- Truthy & Falsy
+- Ternary Operator
+- Switch Statements
