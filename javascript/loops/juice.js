@@ -25,20 +25,17 @@ node juice.js
 
 */
 
-
 let num = 99;
-
 while(num >= 1){
-    if(num === 1){
-        // last run with bottle, bottle, bottles
-    console.log(num + ' bottle of milk on the wall! ' + num + '  bottle of milk! Take one down, pass it around... ' + (num - 1) + '  bottles of milk on the wall!');
-}else if(num === 2){
-    // second to last with bottles, bottles, bottle
-    console.log(num + ' bottles of milk on the wall! ' + num + ' bottles of milk! Take one down, pass it around ... ' + (num - 1) + ' bottle of milk on the wall!')
-}else{
-    // all others with bottles
-    console.log(num + ' bottles of milk on the wall! ' + num + ' bottles of milk! Take one down, pass it around ... ' + (num - 1) + ' bottles of milk on the wall!')
+    if (num === 1){
+        // for 1 bottle to 0 bottles
+        console.log(num + " bottle of juice on the wall! " + num + " bottle of juice! Take one down, pass it around... " + (num - 1) + " bottles of juice on the wall!");
+    }else if(num === 2){
+        // for 2 bottles to 1 bottle
+        console.log(num + " bottles of juice on the wall! " + num + " bottles of juice! Take one down, pass it around... " + (num - 1) + " bottle of juice on the wall!");
+    }else{
+        // all other bottles
+        console.log(num + " bottles of juice on the wall! " + num + " bottles of juice! Take one down, pass it around... " + (num - 1) + " bottles of juice on the wall!");
+    }
+    num = num - 1;
 }
-num = num - 1;
-}
-
