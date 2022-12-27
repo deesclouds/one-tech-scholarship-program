@@ -1,5 +1,7 @@
 # Conditionals
 
+Learn how to add logic to our JavaScript programs using conditional statements.
+
 We Write Code to Solve Problems:
 
 When we writing code, we break down problems into steps that are executed by a computer. 
