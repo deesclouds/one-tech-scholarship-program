@@ -55,6 +55,8 @@ Comments are used to clarify and document complex code. This helps improve reada
 
 ## Data Type & Variables
 
+Learn how to represent real-world data using JavaScript variables, and distinguish between the different data types.
+
 ### Strings
 Can be any combination of characters --letters, numbers and even emojis
 
