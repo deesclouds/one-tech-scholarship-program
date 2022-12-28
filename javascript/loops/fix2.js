@@ -9,7 +9,7 @@ for (let k = 12 k < 21 k++){
 Running code: 
 node fix2.js
 */
-for (let k = 12; k <= 20; k++){
+for (let k = 12; k < 21; k++){
     console.log(k);
 }
 /*
