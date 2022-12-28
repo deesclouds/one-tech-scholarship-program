@@ -13,7 +13,7 @@ They control the flow of code allowing us to execute a block of code multiple ti
 loops lets us iterate over values and repeatedly run a block of code.
 
 ## Parts of a while loop
-
+<!-- image of a for loop -->
 There are many different kinds of loops that essentially do the same thing: repeat an action multiple times
 
 Three main pieces loops should have:
@@ -40,4 +40,6 @@ It's easy to forget some of these pieces in a while loop and end up with an infi
 for loops gives us more control over the looping process. 
 
 # Parts of a for loop
+<!-- image of for loop -->
 <img src="for-loop.png" alt="image of a for loop">
+
