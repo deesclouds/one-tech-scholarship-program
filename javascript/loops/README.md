@@ -38,3 +38,6 @@ Read more about while loops [MDN-while](https://developer.mozilla.org/en-US/docs
 It's easy to forget some of these pieces in a while loop and end up with an infinite loop that crashes your browser.
 
 for loops gives us more control over the looping process. 
+
+# Parts of a for loop
+<img src="for-loop.png" alt="image of a for loop">
