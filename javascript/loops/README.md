@@ -30,3 +30,11 @@ The run forever and can crash your browser.
 Read more about while loops [MDN-while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 
 
+**What should loops always include?**
+- Where to start
+- When to stop
+- How to get to the next item
+
+It's easy to forget some of these pieces in a while loop and end up with an infinite loop that crashes your browser.
+
+for loops gives us more control over the looping process. 
