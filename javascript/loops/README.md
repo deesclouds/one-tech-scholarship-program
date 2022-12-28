@@ -195,3 +195,6 @@ It returns the value of x and adds 5 which will return 17 since 12 + 5 = 17
 
 [MDN-Increment and decrement operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#increment_and_decrement)
 [MDN-Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators)
+
+## Loops are a fundamental programming tool
+- we'll be using loops as a programmer so it's to just become comfortable with writing them.
