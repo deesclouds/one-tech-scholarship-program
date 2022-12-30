@@ -141,3 +141,73 @@ A parameter is always going to be a variable name and appears in the function de
 
 An argument is going to be a value and always appear in the code when the function is called or invoked.
 
+## Returning vs. Logging
+
+Output from a function: 
+
+There are two ways to get output from a function: 
+- console.log() - used to print a value to the JS console.
+    - prints values to test your code and give valuable feedback
+
+- return keyword used to stop execution of a function and return the value back to the caller.
+
+What is undefined?
+A function is always going to return some value back to the caller. If a return value is not specified, then the function will just return back undefined.
+
+console.log and return are NOT the same. 
+
+
+- Returning is different from printing:
+printing a value to the JS console only displays the value but the value can't be used anywhere else.
+
+- Printing is great for debugging code:
+Using console.log to test our code in the JS console or to print out values as our code runs can be extremely helpful in pinpointing where something has gone wrong in our code. 
+
+- All function calls return something:
+If a return value is not specified, the function will return undefined.
+
+- The return keyword will stop the execution of a function:
+Any code after a return statement will be ignored.
+
+Math Review: 
+
+A prime number is an integer that is not a product of two similar integers. 
+
+The modulo operator '%' returns the remainder left over when one operand is divided by a second operand. 
+
+We can check for prime numbers by dividing them by smaller integers. If the number can be divided without remainder by any integer greater than 1 it is not a prime number. 
+
+```
+function isPrime(integer) {
+    for(let x = 2; x < integer; x++){
+        if(integer % x === 0){
+            console.log(integer + " is divisible by " + x);
+            return false
+        }
+    }
+    return false;
+}
+```
+
+## Exploring console.log and return Statements
+
+```
+function isThisWorking(input){
+    console.log("Printing: isThisWorking was called and " + input);
+    return "Returning: I am returning this string!";
+}
+isThisWorking(3);
+```
+
+Prints: "Printing: isThisWorking was called and 3 was passed in as an argument"
+
+Returns: "Returning: I am returning this string!"
+
+If we don't define a return value, the function will return undefined by default.
+
+## Using Return Values
+
+Returning a value fro a function is great, but what's the use of a return value if you're not going to use the value to do something?
+
+A function's return value can be stored in a variable or reused throughout our program as a function argument.
+
