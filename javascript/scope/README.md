@@ -48,3 +48,25 @@ Never use var instead of let or const.
 Global variables can conflict with other global variables of the same name. When programs get larger and more complex it'll get more difficult trying to keep track of what's happening. 
 
 Just always use let and const instead of var. 
+
+## Shadowing
+
+**What is shadowing?**
+When variables in different scopes have the same name. When this happens the variable in the inner scope overrides the variable in the outer scope.
+
+## Best Practice: Declare a New Variable
+
+To avoid scope override, always declare a new variable inside our function. This prevents JS from reassigning the value of the variable in the outer scope. 
+
+## Recap:
+- Global scope = available everywhere
+- Function scope = available in the function it was declared
+- Block scope = with (var) is available in the block and in the outer scope of the block it was declared in
+- Block scope = with (let or const), only available in the block it was declared in
+- Accessing an identifier, JS will look first in the current function. 
+
+If it doesn't find anything, it will continue to the next outer function to see if it can find the identifier there. 
+
+It will keep doing this until it reaches the global scope.
+
+- Global identifiers are a bad idea. They can lead to bad variable names, conflicting variable names, and messy code.
