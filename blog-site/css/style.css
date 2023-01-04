@@ -62,6 +62,7 @@ color: rgb(85, 16, 234, 1);
 }
 .footer > p{
     font-size: 16px;
+    padding-top: 2px;
 }
 .content {
   grid-area: main;
