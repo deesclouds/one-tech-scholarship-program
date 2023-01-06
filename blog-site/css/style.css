@@ -43,7 +43,7 @@ body {
 }
 .welcome-title{ 
   color: var(--footer-color);
-  font-family: 'Bungee', cursive;
+  font-family: 'Bungee', sans-serif, cursive;
   font-size: 54pt;
   text-align: left;
 }
@@ -212,7 +212,11 @@ padding-top: 10px;
   height: 100%;
   transition: 0.3s; /* will move the sidebar from the left*/
   background-color: #3D0E61;
-  padding: 0px 10px;
+  font-family: 'Bungee', sans-serif, cursive;
+  font-variant: titling-caps;
+  letter-spacing: 6px;
+  font-size: 286px;
+  padding: 18px 14px;
   box-sizing: border-box;
 }
 /* selects the immediate siblings to the first element */
