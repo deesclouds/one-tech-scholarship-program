@@ -22,24 +22,42 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <!-- Nav -->
-            <nav>
-                <!-- Navbar -->
-                <div class="navbar">
-                    <!-- Logo-->
-                    <!-- Nav Links -->
-                    <div class="menu-items">
-                        <li><a href="index.html"><img id="logo" src="assets/logo-nobg.png" alt="logo"></a></li>
+            <!-- Navbar -->
+            <div class="navbar">
+                <!-- Main Navbar -->
+                <nav id="main-menu">
+                    <ul>
+                        <li><a href="index.html"></a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                    </div>
-                </div>
-                <p class="welcome-title">Welcome to</p>
-                <h1 class="welcome-title"> Wineocity</h1>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger menu -->
+                <img id="logo" src="assets/logo-nobg.png" alt="logo">
+                <i class="fa-solid fa-bars"></i>
+                <input type="checkbox" id="hamburger-input" class="burger-shower" />
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <label>
+                
+                        <!-- Overlay to show a background when the menu appears -->
+                        <div class="overlay"></div>
+
+            </div>
+            <!-- Welcome Area -->
+            <p class="welcome-title">Welcome to</p>
+            <h1 class="welcome-title"> Wineocity</h1>
 
         </div>
-        </nav>
         <!-- Content -->
         <div class="content">
         </div>

@@ -1,18 +1,154 @@
 @import 'post.css';
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Updated style sheet for main page [index.html] */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ Color Palette~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root{
+  --background-color: hsl(228, 16%, 94%);
+  --socials-color:rgb(85, 16, 234, 1);
+  --footer-color: #03174d;
+  --header-color: #51d0f6;
+  --orange: #e78200;
+  --nav-overlay: #3D0E61;
+  --nav-overlay-links: #B9FAF8;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~~~Body~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 body {
-  background-color: #e78200;
-  color: black;
+  background-color:var(--background-color);
   font-size: 24px;
   overscroll-behavior: none;
+  min-height: 100vh;
 }
+/* Rules for everything */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~~~ HEADER~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.header {
+  grid-area: hd;
+  background: var(--header-color);
+  width: 100%;
+  height: 30%;
+  margin: 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~OVERLAY~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ MAIN MENU~~~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#main-menu{
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: var(--nav-overlay);
+  margin: 0px;
+  z-index: 9;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~ MENU ITEMS ~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#main-menu ul{
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~ EACH MENU ITEM LISTED~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#main-menu li{
+  list-style-type: none;
+  font-size: 2rem;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ MENU LINKS ~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#main-menu a{
+  color: var(--nav-overlay-links);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~ MENU LINKS ON HOVER ~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#main-menu a:hover{
+  text-decoration: underline;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~ HAMBURGER MENU ~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  font-family: 'Cabin', Sans-serif;
+  color: var(orange);
+}
+.fa-bars{
+  color: var(--orange);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~ FOOTER~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer {
+  grid-area: ft;
+  background-color: var(--footer-color);
+  color: white;
+  height: 110%;
+  padding: 8px 0 12px 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~ SOCIAL LINKS IN FOOTER ~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer > .fa-twitter, 
+.fa-mastodon, 
+.fa-linkedin, 
+.fa-github {
+color: var(--socials-color);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~COPYRIGHT IN FOOTER~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer > p{
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Rules for small screen */
 /* Mobile First */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (max-width: 750px) {
 .container {
   display: grid;
   height: 100vh;
@@ -28,50 +164,103 @@ body {
     "ft";
 }
 #logo {
-  height: 100px;
+  height: 200px;
   width: auto;
   position: relative;
+  top: -60px;
+  right: -38px;
+}
+.fa-bars{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -134px;
+  left: -245px;
+}
+#hamburger-input{
+  position: relative;
+  top: -150px;
+  right: 281px;
+  visibility: hidden;
 }
 
-.box {
-  width: 250px;
-  height: 150px;
-  border: 1px solid red;
+#hamburger-menu #sidebar-menu{
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  transition: 0.3s; /* will move the sidebar from the left*/
+  background-color: #3D0E61;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+/* selects the immediate siblings to the first element */
+#hamburger-input:checked + #hamburger-menu #sidebar-menu{
+  visibility: visible;
+  left: 0; /* will bring it into view */
+}
+/* sets the non immediate siblings since .overlay is not immediately after #hamburger.input */
+#hamburger-input:checked ~ .overlay{
+  visibility: visible;
+  opacity: 0.4;
 }
 
-.header {
-  grid-area: hd;
-  background: #51d0f6;
-  width: 100%;
-  height: 30%;
-  margin: 0;
+#hamburger-menu h3 {
+color: #B9FAF8;
+font-size: 2.2rem;
 }
 
-.footer {
-  grid-area: ft;
-  background-color: #03174d;
-  color: white;
-  height: 110%;
-  padding: 8px 0 12px 0;
+#hamburger-menu ul {
+padding-left: 0px;
 }
-.footer > .fa-twitter, 
-.fa-mastodon, 
-.fa-linkedin, 
-.fa-github {
-color: rgb(85, 16, 234, 1);
+
+#hamburger-menu li {
+list-style-type: none;
+line-height: 3rem;
 }
-.footer > p{
-    font-size: 16px;
-    padding-top: 2px;
+
+#hamburger-menu a {
+color: #B9FAF8;
+font-size: 1.3rem;
+text-decoration: none;
 }
+
+#hamburger-menu a:hover {
+text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+ visibility: visible;
+opacity: 0.4;
+}
+
+#main-menu {
+  display: none;
+}
+/* #hamburger-menu {
+  display: inline;
+} */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ Content Box~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .content {
   grid-area: main;
   background-image: url(../assets/pexels-elevate-1269031.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* Rules for Medium Screens */
-@media (min-width: 600px) and (max-width: 1100px) {
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~Rules for Medium Screens ~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 750px) and (max-width: 1100px) {
   .container {
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -82,9 +271,19 @@ color: rgb(85, 16, 234, 1);
       "ft ft ft ft ft ft ft ft";
     border: 2px solid green;
   }
+  .content{
+    margin: 0 auto;
+  }
+  #hamburger-menu{
+    display: none;
+  }
+  #main-menu{
+    display: inline;
+  }
 }
-
-/* Rules for Large Screens  */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~ Rules for Larger Screens~~~~~  */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (min-width: 1101px) {
   .container {
     display: grid;
@@ -93,5 +292,11 @@ color: rgb(85, 16, 234, 1);
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
+  }
+  #hamburger-menu{
+    display: none;
+  }
+  #main-menu{
+    display: inline;
   }
 }
