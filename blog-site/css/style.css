@@ -60,10 +60,11 @@ body {
   height: 62%;
   margin: 0;
 }
+/* Doesn't do anything lol */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~OVERLAY~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.overlay{
+/* .overlay{
   position: fixed;
   top: 0;
   left: 0;
@@ -75,7 +76,7 @@ body {
   overflow: hidden;
   background: black;
   z-index: -1;
-}
+} */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~ MAIN MENU~~~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
