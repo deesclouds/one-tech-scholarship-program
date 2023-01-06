@@ -164,52 +164,103 @@ color: var(--socials-color);
     "ft";
 }
 #logo {
-  height: 100px;
+  height: 200px;
   width: auto;
   position: relative;
+  top: -60px;
+  right: -38px;
+}
+.fa-bars{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -134px;
+  left: -245px;
+}
+#hamburger-input{
+  position: relative;
+  top: -150px;
+  right: 281px;
+  visibility: hidden;
 }
 
-.box {
-  width: 250px;
-  height: 150px;
-  border: 1px solid red;
+#hamburger-menu #sidebar-menu{
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  transition: 0.3s; /* will move the sidebar from the left*/
+  background-color: #3D0E61;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+/* selects the immediate siblings to the first element */
+#hamburger-input:checked + #hamburger-menu #sidebar-menu{
+  visibility: visible;
+  left: 0; /* will bring it into view */
+}
+/* sets the non immediate siblings since .overlay is not immediately after #hamburger.input */
+#hamburger-input:checked ~ .overlay{
+  visibility: visible;
+  opacity: 0.4;
 }
 
-.header {
-  grid-area: hd;
-  background: var(--header-color);
-  width: 100%;
-  height: 30%;
-  margin: 0;
+#hamburger-menu h3 {
+color: #B9FAF8;
+font-size: 2.2rem;
 }
 
-.footer {
-  grid-area: ft;
-  background-color: var(--footer-color);
-  color: white;
-  height: 110%;
-  padding: 8px 0 12px 0;
+#hamburger-menu ul {
+padding-left: 0px;
 }
-.footer > .fa-twitter, 
-.fa-mastodon, 
-.fa-linkedin, 
-.fa-github {
-color: var(--socials-color);
+
+#hamburger-menu li {
+list-style-type: none;
+line-height: 3rem;
 }
-.footer > p{
-    font-size: 16px;
-    padding-top: 2px;
+
+#hamburger-menu a {
+color: #B9FAF8;
+font-size: 1.3rem;
+text-decoration: none;
 }
+
+#hamburger-menu a:hover {
+text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+ visibility: visible;
+opacity: 0.4;
+}
+
+#main-menu {
+  display: none;
+}
+/* #hamburger-menu {
+  display: inline;
+} */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ Content Box~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .content {
   grid-area: main;
   background-image: url(../assets/pexels-elevate-1269031.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
+}
 
-
-/* Rules for Medium Screens */
-@media (min-width: 600px) and (max-width: 1100px) {
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~Rules for Medium Screens ~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 750px) and (max-width: 1100px) {
   .container {
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -220,9 +271,19 @@ color: var(--socials-color);
       "ft ft ft ft ft ft ft ft";
     border: 2px solid green;
   }
+  .content{
+    margin: 0 auto;
+  }
+  #hamburger-menu{
+    display: none;
+  }
+  #main-menu{
+    display: inline;
+  }
 }
-
-/* Rules for Large Screens  */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~ Rules for Larger Screens~~~~~  */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (min-width: 1101px) {
   .container {
     display: grid;
@@ -231,5 +292,11 @@ color: var(--socials-color);
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
+  }
+  #hamburger-menu{
+    display: none;
+  }
+  #main-menu{
+    display: inline;
   }
 }
