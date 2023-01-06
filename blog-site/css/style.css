@@ -143,7 +143,7 @@ body {
   background-color: var(--orange);
   color: white;
   height: 110%;
-  padding: 8px 0 12px 0;
+  padding: 16px 0 12px 0;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~ SOCIAL LINKS IN FOOTER ~~~~~*/
@@ -169,7 +169,7 @@ padding-top: 10px;
 /* Rules for small screen */
 /* Mobile First */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
 .container {
   display: grid;
   height: 100vh;
@@ -189,6 +189,7 @@ padding-top: 10px;
   top: -56px;
   right: -38px;
 }
+/* Hamburger Bars */
 .fa-bars{
   width: 50px;
   height: 50px;
@@ -266,6 +267,9 @@ opacity: 0.4;
 #main-menu {
   display: none;
 }
+.welcome-area{
+  margin-top: -74px;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~ NavBar~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -282,7 +286,142 @@ opacity: 0.4;
   margin-top: 38px;
 }
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~Rules for Small Devices(Portrait Tablets and Large Phones 5 ~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (min-width: 601px){
+.header {
+    width: 100%;
+    height: 62%;
+    margin: 0;
+    padding-top: 100px;
+  }
 
+#logo {
+    height: 230px;
+    width: auto;
+    position: relative;
+    top: -168px;
+    right: -38px;
+  }
+
+#main-menu{
+  display: none;
+}
+/* Hamburger Bars */
+.fa-bars{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -258px;
+  left: -390px;
+}
+#hambuger-menu{
+  display: inline;
+}
+#hamburger-input{
+  position: relative;
+  top: -258px;
+  right: 428px;
+  visibility: hidden;
+}
+
+#hamburger-menu #sidebar-menu{
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  transition: 0.3s; /* will move the sidebar from the left*/
+  background-color: #3D0E61;
+  font-family: 'Bungee', sans-serif, cursive;
+  font-variant: titling-caps;
+  letter-spacing: 6px;
+  font-size: 124px;
+  padding: 18px 14px;
+  box-sizing: border-box;
+}
+/* selects the immediate siblings to the first element */
+#hamburger-input:checked + #hamburger-menu #sidebar-menu{
+  visibility: visible;
+  left: 0; /* will bring it into view */
+}
+/* sets the non immediate siblings since .overlay is not immediately after #hamburger.input */
+#hamburger-input:checked ~ .overlay{
+  visibility: visible;
+  opacity: 0.4;
+}
+
+#hamburger-menu h3 {
+color: #B9FAF8;
+font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+padding-left: 0px;
+}
+
+#hamburger-menu li {
+list-style-type: none;
+line-height: 3rem;
+}
+
+#hamburger-menu a {
+color: #B9FAF8;
+font-size: 1.3rem;
+text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+ visibility: visible;
+opacity: 0.4;
+}
+
+#main-menu {
+  display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ NavBar~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar{
+  height: 0px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ Content Box~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.content {
+  grid-area: main;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 38px;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "hd"
+    "welcome"
+    "ft";
+}
+.welcome-area{
+  margin-top: 0px;
+}
+.footer{
+  width: 100%;
+  padding: 22px 0 12px 0;
+}}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~Rules for Medium Screens ~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
