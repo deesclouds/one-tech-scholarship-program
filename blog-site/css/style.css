@@ -11,7 +11,7 @@
 /*~~~~~~~~~~~ Color Palette~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 :root{
-  --background-color: hsl(228, 16%, 94%);
+  --background-color: #03174d;
   --socials-color:rgb(85, 16, 234, 1);
   --footer-color: #03174d;
   --header-color: #51d0f6;
@@ -24,10 +24,28 @@
 /*~~~~~~~~~~~~~Body~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 body {
+  background-image: url(../assets/pexels-olena-bohovyk-3323682.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
   background-color:var(--background-color);
   font-size: 24px;
   overscroll-behavior: none;
   min-height: 100vh;
+}
+
+.welcome-area{
+  grid-area: welcome;
+  background-color: rgba(255, 228, 196, 0.532);
+  margin-top: -74px;
+  padding-top: 160px;
+  padding-left: 20px;
+  line-height: 1.0;
+}
+.welcome-title{ 
+  color: var(--footer-color);
+  font-family: 'Bungee', sans-serif, cursive;
+  font-size: 54pt;
+  text-align: left;
 }
 /* Rules for everything */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -37,7 +55,7 @@ body {
   grid-area: hd;
   background: var(--header-color);
   width: 100%;
-  height: 30%;
+  height: 62%;
   margin: 0;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -115,14 +133,14 @@ body {
   color: var(orange);
 }
 .fa-bars{
-  color: var(--orange);
+  color: var(--footer-color);
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~ FOOTER~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .footer {
   grid-area: ft;
-  background-color: var(--footer-color);
+  background-color: var(--orange);
   color: white;
   height: 110%;
   padding: 8px 0 12px 0;
@@ -134,14 +152,17 @@ body {
 .fa-mastodon, 
 .fa-linkedin, 
 .fa-github {
-color: var(--socials-color);
+color: var(--footer-color);
+padding-top: 10px;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~COPYRIGHT IN FOOTER~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .footer > p{
-  font-size: 16px;
-  padding-top: 2px;
+  font-size: 12px;
+  padding-top: 6px;
+  color: var(--footer-color);
+  font-family: sans-serif;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -157,25 +178,23 @@ color: var(--socials-color);
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "hd"
-    "main"
-    "main"
-    "main"
-    "ft"
+    "welcome"
+    "welcome"
     "ft";
 }
 #logo {
-  height: 200px;
+  height: 230px;
   width: auto;
   position: relative;
-  top: -60px;
+  top: -56px;
   right: -38px;
 }
 .fa-bars{
   width: 50px;
   height: 50px;
   position: relative;
-  top: -134px;
-  left: -245px;
+  top: -146px;
+  left: -250px;
 }
 #hamburger-input{
   position: relative;
@@ -193,7 +212,11 @@ color: var(--socials-color);
   height: 100%;
   transition: 0.3s; /* will move the sidebar from the left*/
   background-color: #3D0E61;
-  padding: 0px 10px;
+  font-family: 'Bungee', sans-serif, cursive;
+  font-variant: titling-caps;
+  letter-spacing: 6px;
+  font-size: 286px;
+  padding: 18px 14px;
   box-sizing: border-box;
 }
 /* selects the immediate siblings to the first element */
@@ -243,17 +266,20 @@ opacity: 0.4;
 #main-menu {
   display: none;
 }
-/* #hamburger-menu {
-  display: inline;
-} */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*~~~~~~~~~~~ NavBar~~~~~~~~~~ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar{
+  height: 0px;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~ Content Box~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .content {
   grid-area: main;
-  background-image: url(../assets/pexels-elevate-1269031.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 38px;
 }
 }
 
