@@ -270,9 +270,10 @@ opacity: 0.4;
 #main-menu {
   display: none;
 }
-.welcome-area{
+/* Rename overlay */
+/* .welcome-area{
   margin-top: -74px;
-}
+} */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~ NavBar~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
