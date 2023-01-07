@@ -492,13 +492,23 @@ opacity: 0.4;
 @media (min-width: 1101px) {
   .container {
     display: grid;
-    border: 2px solid red;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
+      "hd hd hd hd hd hd hd hd hd"
+      "hd hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
   }
-  #hamburger-menu{
+  .header{
+    grid-area: hd;
+    width: 100%;
+    padding-bottom: 2%;
+  }
+  .footer{
+    grid-area: ft;
+    margin-top: 15%;
+  }
+  #hamburger-menu, .fa-bars{
     display: none;
   }
   #main-menu{
