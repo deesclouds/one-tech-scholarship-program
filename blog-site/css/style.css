@@ -445,13 +445,15 @@ opacity: 0.4;
 @media (min-width: 750px) and (max-width: 1100px) {
   .container {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "hd hd hd hd hd hd hd hd"
-      "main main main main main main main main"
+      "welcome welcome welcome welcome welcome welcome welcome welcome"
+      "welcome welcome welcome welcome welcome welcome welcome welcome"
+      "ft ft ft ft ft ft ft ft"
       "ft ft ft ft ft ft ft ft";
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
   .content{
     margin: 0 auto;
